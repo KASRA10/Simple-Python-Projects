@@ -1,7 +1,10 @@
 # very simple code just for training basic materials in python!
 print(str("🙋‍♂️ Developed by Kasra10 - https://www.kasra10design.com"))
-print(" \"In this small game, every chosen number will always result in the number 8.\" 😁")
-print("""Instructions:
+print(
+    ' "In this small game, every chosen number will always result in the number 8." 😁'
+)
+print(
+    """Instructions:
 1- a number from 1 to 9
 2- chosen number * 2
 3- result + 8
@@ -10,8 +13,11 @@ print("""Instructions:
 6- result / 3
 7- result - first chosen number
 8- result * 4
-Final result is always 8 😊""")
-print("---------------------------------------- ⬇️Lets Play!⬇️ ----------------------------------------")
+Final result is always 8 😊"""
+)
+print(
+    "---------------------------------------- ⬇️Lets Play!⬇️ ----------------------------------------"
+)
 firstNumber = float(input("Step 1: Please choose a number between 1 - 9: "))
 firstNumber = int(firstNumber)
 earliestNumber = firstNumber
