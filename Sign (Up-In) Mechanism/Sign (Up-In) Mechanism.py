@@ -85,6 +85,13 @@ while True:  # Use while For This Specific Code To Restart Again
         newUser_email = input("email: ".title())
         newUser_password = input("password: ".title())
 
+        # Check The Admin Token
+        while newUser_username and newUser_password == "admin":
+            print("access denied, this is administrator token pass.  ⛔ ".title())
+            newUser_username = input("Username: ".title())
+            newUser_email = input("email: ".title())
+            newUser_password = input("password: ".title())
+
         # Check if the password is secure
         while not any(chr in newUser_password for chr in specialCharacters):
             print(
@@ -98,16 +105,6 @@ while True:  # Use while For This Specific Code To Restart Again
             print("your password are not similar, please be careful  🤦‍♂️ ".title())
             newUser_password = input("password: ".title())
             rePass = input("re-password: ".title())
-        while newUser_username and newUser_password == "admin":
-            print("access denied, this is administrator token pass.  ⛔ ".title())
-            newUser_username = input("Username: ".title())
-            newUser_email = input("email: ".title())
-            newUser_password = input("password: ".title())
-            rePass = input("re-password: ".title())
-            while newUser_password != rePass:
-                print("your passwords are not similar, please be careful  🤦‍♂️ ".title())
-                newUser_password = input("password: ".title())
-                rePass = input("re-password: ".title())
 
         # Store Users Information to the Database
         users_database.update({"user1_username": newUser_username})
