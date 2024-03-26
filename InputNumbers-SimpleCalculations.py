@@ -3,7 +3,7 @@ number1 = input("insert the first number here: ".title())
 number2 = input("insert the second number here: ".title())
 
 # Check The Quality Of Input
-while number1.isalpha() or number1.isalpha():
+while number1.isalpha() or number2.isalpha():
     print("please insert just integers!!!".title())
     number1 = input("insert the first number here: ".title())
     number2 = input("insert the second number here: ".title())
