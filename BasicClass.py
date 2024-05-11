@@ -12,6 +12,7 @@ class Circle:
 
 # Create A Object
 firstCircle = Circle()
+
 # Use Class's Methods
 firstCircle.getRadius()
 firstCircle.calculateArea()
